@@ -1,9 +1,5 @@
 # install script for appman
-echo "Installing appman\n\n"
-
-echo "info - Requesting 'sudo' permission:"
-
-sudo echo "success - 'sudo' is available"
+echo "Installing appman"
 
 cd /usr/local/bin/
 
