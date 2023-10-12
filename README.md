@@ -30,3 +30,28 @@ These are the apps available to manage on appman:
 - `sublime_text`: Sublime Text by Sublime Text Team
 - `hyper`: Hyper by Vercel
 - `discord`: Discord by Discord Inc.
+- `spotify`: Spotify by Spotify Inc.
+- `arc`: Arc Browser by The Browser Company
+
+## Add Apps
+To add apps, create a pull request for `README.md` and add your app under `Available Apps`. In the description for your pull request, add your app data following this template:
+```json
+{
+  "appName": "A Cool App",
+  "developerName": "A Cool Developer",
+  "versions": {
+    "intel": "https://some.cool.app/download/intel.dmg",
+    "silicon": "https://some.cool.app/download/silicon.dmg"
+  },
+  "appSupportDirName": "ACoolApp",
+  "downloadsAs": "dmg"
+}
+```
+
+`downloadsAs` should preferably be set to either `dmg` or `zip`.
+`appSupportDirName` **must** be set to the `Application Support` directory name the app creates.
+
+If the app doesn't have an Apple Silicon version, just set `versions.silicon` to `null`.
+Or, if the URL is the same for both versions, set `versions.intel` and `versions.silicon` to the same URL.
+
+Both URLs must download the same kind of file as you define in `downloadsAs`.
