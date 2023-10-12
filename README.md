@@ -12,7 +12,7 @@ With appman, all you have to do is use the command line.
 To install appman, execute the following in your Terminal:
 
 ```sh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/blueysh/appman/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/blueysh/appman/main/install.sh)"
 ```
 
 ## Managing Apps
